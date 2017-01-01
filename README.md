@@ -22,4 +22,4 @@
 + (instancetype)viewWithImagesArray:(NSArray *)imagesArray;
 ```
 ### 定时器
-定时器使用的是我自己封装的GCD定时器，有兴趣可以前往[https://github.com/Shanhi/GCDTimer](https://github.com/Shanhi/GCDTimer)浏览
+定时器使用的是我自己封装的GCD定时器，有兴趣的朋友可以前往[https://github.com/Shanhi/GCDTimer](https://github.com/Shanhi/GCDTimer)浏览
