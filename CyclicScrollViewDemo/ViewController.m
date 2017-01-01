@@ -2,11 +2,12 @@
 //  ViewController.m
 //  CyclicScrollViewDemo
 //
-//  Created by sShan on 17/1/1.
-//  Copyright © 2017年 Shan. All rights reserved.
+//  Created by sShan on 16/12/30.
+//  Copyright © 2016年 Shan. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "CyclicScrollView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSMutableArray *imageArr = [NSMutableArray array];
+    for (int j=0; j<5; j++) {
+        [imageArr addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%d", j+1]]];
+    }
+    NSLog(@"%@", imageArr);
+    
+    CyclicScrollView *cyclicScrollView = [CyclicScrollView viewWithImagesArray:imageArr];
+    cyclicScrollView.frame = CGRectMake(0, 300, self.view.frame.size.width, 150);
+    cyclicScrollView.interval = 1;
+    
+    [self.view addSubview:cyclicScrollView];
 }
 
 

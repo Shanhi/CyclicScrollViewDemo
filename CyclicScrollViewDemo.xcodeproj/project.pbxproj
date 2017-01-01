@@ -15,6 +15,10 @@
 		9C4B76941E19477B0074F2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4B76921E19477B0074F2AF /* LaunchScreen.storyboard */; };
 		9C4B769F1E19477C0074F2AF /* CyclicScrollViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B769E1E19477C0074F2AF /* CyclicScrollViewDemoTests.m */; };
 		9C4B76AA1E19477C0074F2AF /* CyclicScrollViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B76A91E19477C0074F2AF /* CyclicScrollViewDemoUITests.m */; };
+		9C4B76C01E19479B0074F2AF /* CyclicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B76B91E19479B0074F2AF /* CyclicCollectionViewCell.m */; };
+		9C4B76C11E19479B0074F2AF /* CyclicCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B76BB1E19479B0074F2AF /* CyclicCollectionViewLayout.m */; };
+		9C4B76C21E19479B0074F2AF /* CyclicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B76BD1E19479B0074F2AF /* CyclicScrollView.m */; };
+		9C4B76C31E19479B0074F2AF /* GCD_Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4B76BF1E19479B0074F2AF /* GCD_Timer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		9C4B76A51E19477C0074F2AF /* CyclicScrollViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyclicScrollViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4B76A91E19477C0074F2AF /* CyclicScrollViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyclicScrollViewDemoUITests.m; sourceTree = "<group>"; };
 		9C4B76AB1E19477C0074F2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C4B76B81E19479B0074F2AF /* CyclicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCollectionViewCell.h; sourceTree = "<group>"; };
+		9C4B76B91E19479B0074F2AF /* CyclicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicCollectionViewCell.m; sourceTree = "<group>"; };
+		9C4B76BA1E19479B0074F2AF /* CyclicCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCollectionViewLayout.h; sourceTree = "<group>"; };
+		9C4B76BB1E19479B0074F2AF /* CyclicCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicCollectionViewLayout.m; sourceTree = "<group>"; };
+		9C4B76BC1E19479B0074F2AF /* CyclicScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicScrollView.h; sourceTree = "<group>"; };
+		9C4B76BD1E19479B0074F2AF /* CyclicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicScrollView.m; sourceTree = "<group>"; };
+		9C4B76BE1E19479B0074F2AF /* GCD_Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD_Timer.h; sourceTree = "<group>"; };
+		9C4B76BF1E19479B0074F2AF /* GCD_Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCD_Timer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		9C4B76831E19477B0074F2AF /* CyclicScrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9C4B76B71E19479B0074F2AF /* CyclicScrollView */,
 				9C4B76871E19477B0074F2AF /* AppDelegate.h */,
 				9C4B76881E19477B0074F2AF /* AppDelegate.m */,
 				9C4B768A1E19477B0074F2AF /* ViewController.h */,
@@ -138,6 +151,21 @@
 				9C4B76AB1E19477C0074F2AF /* Info.plist */,
 			);
 			path = CyclicScrollViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		9C4B76B71E19479B0074F2AF /* CyclicScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9C4B76BC1E19479B0074F2AF /* CyclicScrollView.h */,
+				9C4B76BD1E19479B0074F2AF /* CyclicScrollView.m */,
+				9C4B76B81E19479B0074F2AF /* CyclicCollectionViewCell.h */,
+				9C4B76B91E19479B0074F2AF /* CyclicCollectionViewCell.m */,
+				9C4B76BA1E19479B0074F2AF /* CyclicCollectionViewLayout.h */,
+				9C4B76BB1E19479B0074F2AF /* CyclicCollectionViewLayout.m */,
+				9C4B76BE1E19479B0074F2AF /* GCD_Timer.h */,
+				9C4B76BF1E19479B0074F2AF /* GCD_Timer.m */,
+			);
+			path = CyclicScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +307,10 @@
 				9C4B768C1E19477B0074F2AF /* ViewController.m in Sources */,
 				9C4B76891E19477B0074F2AF /* AppDelegate.m in Sources */,
 				9C4B76861E19477B0074F2AF /* main.m in Sources */,
+				9C4B76C01E19479B0074F2AF /* CyclicCollectionViewCell.m in Sources */,
+				9C4B76C21E19479B0074F2AF /* CyclicScrollView.m in Sources */,
+				9C4B76C31E19479B0074F2AF /* GCD_Timer.m in Sources */,
+				9C4B76C11E19479B0074F2AF /* CyclicCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
