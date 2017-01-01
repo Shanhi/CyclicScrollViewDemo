@@ -13,7 +13,9 @@
 - (instancetype)initWithImagesArray:(NSArray *)imagesArray;
 ```
 初始化时为避免图片数组被无意修改，会生成一个新的数组<br />
->_imagesArray = [NSArray arrayWithArray:imagesArray];
+> - (void)setImagesArray:(NSArray *)imagesArray {
+>     _imagesArray = [NSArray arrayWithArray:imagesArray];
+> }
 
 * 类方法
 ```
