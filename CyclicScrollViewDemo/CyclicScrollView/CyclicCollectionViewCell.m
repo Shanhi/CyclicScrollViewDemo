@@ -8,6 +8,12 @@
 
 #import "CyclicCollectionViewCell.h"
 
+@interface CyclicCollectionViewCell ()
+
+@property (nonatomic, strong) UIImageView *imageView;
+
+@end
+
 @implementation CyclicCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame

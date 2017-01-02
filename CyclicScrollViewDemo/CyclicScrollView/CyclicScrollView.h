@@ -15,7 +15,7 @@
 //时间间隔默认2秒
 @property (nonatomic, assign) NSTimeInterval interval;
 
-- (instancetype)initWithImagesArray:(NSArray *)imageArray;
-+ (instancetype)viewWithImagesArray:(NSArray *)imageArray;
+- (instancetype)initWithImagesArray:(NSArray <UIImage *>*)imagesArray;
++ (instancetype)viewWithImagesArray:(NSArray <UIImage *>*)imagesArray;
 
 @end

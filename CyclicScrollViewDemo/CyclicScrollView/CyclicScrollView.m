@@ -23,11 +23,11 @@
     NSLog(@"dealloc");
 }
 
-+ (instancetype)viewWithImagesArray:(NSArray *)imagesArray {
++ (instancetype)viewWithImagesArray:(NSArray<UIImage *> *)imagesArray {
     return [[[self class]alloc]initWithImagesArray:imagesArray];
 }
 
-- (instancetype)initWithImagesArray:(NSArray *)imagesArray {
+- (instancetype)initWithImagesArray:(NSArray<UIImage *> *)imagesArray {
     if (self = [super init]) {
         self.imagesArray = imagesArray;
         [self loadCollectionViewAndTimer];
@@ -35,9 +35,9 @@
     return self;
 }
 
-- (void)setImagesArray:(NSArray *)imagesArray {
+- (void)setImagesArray:(NSArray <UIImage *>*)imagesArray {
     _imagesArray = [NSArray arrayWithArray:imagesArray];
-    NSLog(@"\n:::CyclicScrollView.imagesArray:::\n%@", self.imagesArray);
+//    NSLog(@"\n:::CyclicScrollView.imagesArray:::\n%@", self.imagesArray);
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -77,7 +77,7 @@
 }
 
 - (void)nextImage {
-    NSLog(@"%.1f秒后定时器下一张", self.GCDTimer.interval);
+    NSLog(@"%.1f秒后下一张", self.GCDTimer.interval);
     CGFloat newOffsetX = self.collectionView.contentOffset.x + self.collectionView.bounds.size.width;
     [self.collectionView setContentOffset:CGPointMake(newOffsetX, 0) animated:YES];
 }
