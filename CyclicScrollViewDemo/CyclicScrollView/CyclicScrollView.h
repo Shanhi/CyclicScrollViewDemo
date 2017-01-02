@@ -11,7 +11,6 @@
 @interface CyclicScrollView : UIView
 
 @property (nonatomic, strong) NSArray *imagesArray;
-
 //时间间隔默认2秒
 @property (nonatomic, assign) NSTimeInterval interval;
 
